@@ -1,0 +1,152 @@
+*{ 
+    margin:0px; 
+    padding:0px;
+    box-sizing: border-box;
+}
+
+label{
+    margin:0px;
+}
+
+.vertical-left-side-bar{
+    width:4%;
+    background-color: #f7f7f7;
+    position: fixed;
+    left: 0px;
+    padding: 0px 0px 0px 6px;
+}
+
+.vertical-left-side-bar:hover{
+    width:13%;
+    transition-timing-function: ease-out;
+    transition: right .5s ease;
+}
+
+.vertical-left-side-bar:hover .sidebar-item-text{
+    display: block;
+}
+
+.unordered-list-sidebar{
+    margin:0;
+    padding:0;
+}
+
+.sidebar-list-item{
+    align-items: center;
+    list-style-type: none;
+    display:flex;
+    height:51px;
+    font-size: 24px;
+}
+
+.sidebar-item-text{
+    margin:0px 0px 0px 20px;
+    font-size: 18px;
+    display:none;
+}
+
+.level-2{
+    z-index: 1;
+}
+
+.pageRow{
+    padding:0% 0% 0% 4%;
+}
+
+.dashboard-metric-card-holder{
+    display: flex;
+    /* height: 112%; */
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.menu-list{
+    margin: 0px;
+    background-color:#f4f2f2;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    list-style: none;
+    font-size: 140%;
+    font-weight: 200;
+}
+.menu-list li > *{
+    cursor: pointer;
+}
+
+.nav-link{
+    text-decoration: none;
+    padding:0%;
+}
+
+.menu-list li{
+    background-color:#f4f2f2;
+    padding: 2% 12%;
+}
+
+.menu-list li label{
+    margin-left:7%;
+}
+
+.menu-list li.active:before {
+    border-bottom-right-radius: 13px;
+}
+
+.menu-list .active:after {
+    border-top-right-radius: 13px;
+}
+
+.menu-list li.active{
+    background-color:white;
+}
+
+.left-side-nav{
+    padding: 0%;
+}
+
+.dashboard-metric-card.orange-card{
+    background-color: #F8A449;
+    box-shadow: 0px 6px 9px #F8A449;
+}
+
+.dashboard-metric-card.red-card{
+    background-color: #FB7454;
+    box-shadow: 0px 6px 9px #FB7454;
+}
+
+.dashboard-metric-card.yellow-card{
+    background-color: #f4b73f;
+    box-shadow: 0px 6px 9px #f4b73f;
+}
+
+.dashboard-metric-card{
+    width: 100%;
+    display: grid;
+    padding: 4% 8% 6% 8%;
+    border-radius: 8px;
+    color: white;
+}
+
+.dashboard-metric-card .icon-count{
+    display: inline;
+    font-size: 260%;
+}
+
+.dashboard-metric-card .icon-count svg{
+    height: 50%;
+    position: relative;
+    top: -4px;
+    left: -4px;
+}
+
+.dashboard-metric-card .icon-count .metric-count{
+    font-size: 100%;
+    /* margin-left: 5%;
+    position: relative;
+    top: -6px; */
+}
+
+.dashboard-metric-card .metric-title{
+    text-align: left;
+    font-size: 140%;
+}

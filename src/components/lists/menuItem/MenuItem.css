@@ -1,0 +1,61 @@
+*{ 
+    margin:0px; 
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.menu-item-card{
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    padding : 3% 3%;
+    background: #fff;
+    box-shadow: #acacac 1px 1px 8px;
+}
+
+.menu-item{
+    display: flex;
+}
+
+.menu-item-rate-serving{
+    display: grid;
+    width:60%;
+}
+
+.menu-item-serve-rate, .menu-item-title{
+    margin:0px !important;
+}
+
+.menu-item-title{
+    font-weight:600;
+    font-size:15px;
+    margin: auto 0% !important;
+}
+
+.menu-item-count-buttons{
+    display:grid;
+    width:40%;
+}
+
+.menu-item-quantity{
+    text-align: center;
+    font-weight:700;
+    font-size:19px;
+}
+
+.menu-item-buttons-p-m{
+    display: flex;
+}
+
+.menu-item-button{
+    margin: 0px auto;
+    width: 42%;
+}
+
+.mi-button-p{
+    float: left;
+}
+
+.mi-button-n{
+    float: right;
+}
