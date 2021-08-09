@@ -26,14 +26,14 @@ class AppLogin extends Component{
       <React.Fragment>
         <Col lg={12} md={12} sm={12} xs={12} style={this.props.pageParentContainerStyle}>
           <Col lg={{span:4, offset:4}} md={{span:4, offset:4}} sm={12} xs={12} >
-            <Form onSubmit={this.handleSubmit} >
+            <Form onSubmit={this.handleSubmit.bind(this)} >
               <Form.Group controlId="formBasicEmail">
                 <Form.Label >Email address</Form.Label>
-                <Form.Control type="email" placeholder="christiano@cr7.com" onChange={this.inputFieldUpdate} value={this.state.email} />
+                <Form.Control type="email" required placeholder="Registeded Email" onChange={this.inputFieldUpdate} value={this.state.email} />
               </Form.Group>
               <Form.Group controlId="formBasicPassword">
                 <Form.Label >Password</Form.Label>
-                <Form.Control type="password" placeholder="workout" onChange={this.inputFieldUpdate} value={this.state.password} />
+                <Form.Control type="password" required placeholder="********" onChange={this.inputFieldUpdate} value={this.state.password} />
               </Form.Group>
               <Button style={{position:"absolute",right:"5%"}} variant="primary" type="submit">
                 Login

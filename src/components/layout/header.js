@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Menu from './menu';
+//import appLogo from '../../../public/images/appbranding/logo.png';
 
 
 function Header(props){

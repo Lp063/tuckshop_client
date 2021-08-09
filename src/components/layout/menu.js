@@ -20,10 +20,7 @@ class Menu extends Component{
                             <Link style={this.pageLink(this.props,"always")} className="nav-link" to="/"> Home</Link>
                         </li>
                         <li className="nav-item" onClick = {this.pageNavItemClicked}>
-                            <Link style={this.pageLink(this.props,"notLoggedIn")} className="nav-link" to="/signUpTeam">Sign Up</Link>
-                        </li>
-                        <li className="nav-item" onClick = {this.pageNavItemClicked}>
-                            <Link style={this.pageLink(this.props,"loggedInOnly")} className="nav-link" to="/teamManager">Team</Link>
+                            <Link style={this.pageLink(this.props,"loggedInOnly")} className="nav-link" to="/itemListing">Menu</Link>
                         </li>
                         <li className="nav-item" onClick = {this.pageNavItemClicked}>
                             <Link style={this.pageLink(this.props,"loggedInOnly")} className="nav-link" onClick={this.props.logoutRedirect} to="/">Logout</Link>
