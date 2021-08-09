@@ -17,7 +17,7 @@ function Dashboard(){
                         <FontAwesomeIcon className="count" icon={faTicketAlt} />
                         <label className="metric-count" >3</label>
                     </div>
-                        <label className="metric-title" >Total Events Conducted</label>
+                        <label className="metric-title" >Total Event Conducted</label>
                 </div>
             </Col>
             <Col lg={4} md={4} sm={12} xs={12} >
